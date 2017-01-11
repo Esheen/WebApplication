@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bees.com</title>
+    <meta charset="utf-8" />
+    <link href="BEES.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="Bumble-bee.jpg" alt="logoBees" />
+        <ul id="nav" class="group">
+            <li class="first" data-id="two">
+                <a href="#two">About Bees</a>
+            </li>
+            <li data-id="second">
+                <a href="#OrderInfo">Product</a>
+            </li>
+            <li data-id="third">
+                <a href="contact.aspx">Contact Us</a>
+            </li>
+            <li data-id="twitterlogo">
+                <a target="_blank" href="https://twitter.com/">
+                    <img class="white" src="twitterlogo.png" alt="twitterlogo" />
+                </a>
+            </li>
+            <li data-id="instagramlogo">
+                <a target="_blank" href="https://www.instagram.com">
+                    <img class="white" src="instagramlogo.png" alt="instagramlogo" />
+                </a>
+            </li>
+            <li data-id="facebooklogo">
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img class="white" src="facebooklogo.png" alt="facebooklogo" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="two" data-text="white" class="block two group section">
+        <div>
+            <h1>About Bees</h1>
+            <p>
+                There are about 20,000 different species of bees in the world. Bees live in colonies that contain the queen bee, the worker bee and the drone. The worker bee and the queen bee are both female, but only the queen bee can reproduce. All drones are male. Worker bees clean the hive, collecting pollen and nectar to feed the colony and they take care of the offspring. The drone’s only job is to mate with the queen. The queen’s only job is to lay eggs. (Origin: http://pestworldforkids.org/pest-guide/bees/)
+            </p>
+        </div>
+    </div>
+    <div id="OrderInfo">
+
+        <form name="OrderRequestForm" action="http://www.duq.edu" method="get">
+            <h1 class="shopbees">Shop Bees</h1>
+            <table class="list">
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            Bees Products
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="organicHoney.jpg" alt="honey" />
+                        </td>
+                        <td>
+                            <img src="bread.jpg" alt="bread" />
+                        </td>
+                        <td>
+                            <img src="cheerios.jpg" alt="cheerios" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="Radio1" type="radio" />Honey
+                        </td>
+                        <td>
+                            <input id="Radio1" type="radio" />Bread
+                        </td>
+                        <td>
+                            <input id="Radio1" type="radio" />Cheerios
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Please select a quantity number:
+                            <select id="Select1">
+                                <option value="0" selected disabled>Please select a quantity number</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table class="shipInfo">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            Shipping Inforamtion
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="label">
+                            <label>First Name:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Last Name:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Email:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Phone:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Street 1:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Street 2 (optional):</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>City:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>State:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Zip Code:</label>
+                        </td>
+                        <td class="field">
+                            <input id="Text1" type="text" />
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="check" colspan="2">
+                            <input id="Checkbox1" type="checkbox" />Expedited shipping request
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p><input class="submit" id="Submit" type="submit" onsubmit="validateORForm()" value="Submit Request" /></p>
+        </form>
+    </div>
+</body>
+</html>
