@@ -120,12 +120,14 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="bearbee.jpg" />
     <Content Include="BEES.css" />
     <Content Include="BEES.html" />
     <Content Include="bread.jpg" />
     <Content Include="Bumble-bee.jpg" />
     <Content Include="cheerios.jpg" />
+    <Content Include="contact.aspx" />
     <Content Include="facebooklogo.png" />
     <Content Include="honeyOil.jpg" />
     <Content Include="instagramlogo.png" />
@@ -135,12 +137,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Bees.Master.designer.vb">
       <DependentUpon>Bees.Master</DependentUpon>
     </Compile>
     <Compile Include="Bees.Master.vb">
       <DependentUpon>Bees.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
