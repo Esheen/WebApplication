@@ -132,7 +132,10 @@
     <Content Include="honeyOil.jpg" />
     <Content Include="instagramlogo.png" />
     <Content Include="nail.jpg" />
+    <Content Include="order.aspx" />
     <Content Include="organicHoney.jpg" />
+    <Content Include="product.aspx" />
+    <Content Include="Thankyou.aspx" />
     <Content Include="twitterlogo.png" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -176,6 +179,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="order.aspx.designer.vb">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order.aspx.vb">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="product.aspx.designer.vb">
+      <DependentUpon>product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product.aspx.vb">
+      <DependentUpon>product.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Thankyou.aspx.designer.vb">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thankyou.aspx.vb">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
