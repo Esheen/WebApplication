@@ -1,0 +1,55 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Bees.master.vb" Inherits="WebApplication.Bees" %>
+
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Bees</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="BEES.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color: #90EE90">
+    <div id="header">
+        <img id="logo" src="Bumble-bee.jpg" alt="logoBees" />
+        <ul id="nav" class="group">
+            <li class="first">
+                <a href="About.aspx">About Bees</a>
+            </li>
+            <li class="first">
+                <a href="product.aspx">Product</a>
+            </li>
+            <li>
+                <a href="order.aspx">Shop</a>
+            </li>
+            <li>
+                <a href="contact.aspx">Contact Us</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/">
+                    <img class="white" src="twitterlogo.png" alt="twitterlogo" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com">
+                    <img class="white" src="instagramlogo.png" alt="instagramlogo" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img class="white" src="facebooklogo.png" alt="facebooklogo" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <form id="form1" runat="server">
+            <div id="middle">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
